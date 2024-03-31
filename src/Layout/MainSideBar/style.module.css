@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
+  border: 1px solid gray;
+  width: 70px;
+  gap: 20px;
+  padding: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  /* Space between icons */
+}
+
+.link {
+  height: 50px;
+  width: 50px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.link:hover {
+  color: green;
+  background-color: lawngreen;
+}
+
+.active {
+  background-color: red;
+}
+
+.avatar {
+  height: 50px;
+  width: 50px;
+  border-radius: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: aqua;
+}
+
+.icon {
+  color: gray;
+}
+
+.icon.active,
+.icon:hover {
+  color: green;
+}
+.link:hover .icon {
+  color: green;
+}
