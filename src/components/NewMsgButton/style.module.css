@@ -1,7 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --green-color: rgb(14, 157, 133);
+    --green-color: #0e9d85;
     --white-color: white;
     --white-color: white;
 
@@ -9,18 +8,15 @@
     --green-hover: #0B7D6A;
     --white-hover: #E5E5E5;
     --gray-hover: #ccc;
-
-    --button-font: 'Heebo', sans-serif;
-
 }
 
 
 
 .save {
     background-color: var(--green-color);
+    height: 51px;
+    width: 249px;
     gap: 6px;
-    width: 115px;
-    height: 55px;
     border-radius: 8px;
     border: 1px;
     padding: 7px, 32px, 7px, 32px;
@@ -29,6 +25,11 @@
     color: white;
     font-family: var(--button-font);
     cursor: pointer;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+
 }
 
 .save:hover {

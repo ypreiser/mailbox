@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import styles from './style.module.css';
-import Button from '../../components/Button';
-import { FaAngleDown, FaAngleLeft, FaAngleRight, FaAngleUp, FaEnvelope, FaInbox, FaPaperPlane, FaPen, FaStar, FaTrash } from 'react-icons/fa';
+import NewMsgButton from '../../components/NewMsgButton';
+import { FaAngleDown, FaAngleLeft, FaAngleUp, FaEnvelope, FaInbox, FaPaperPlane, FaPen, FaStar, FaTrash } from 'react-icons/fa';
 import { NavLink, Outlet, Route, Routes } from 'react-router-dom';
 
 
@@ -12,7 +12,7 @@ export default function MailboxLayout() {
       <div className={styles.sidebar}>
         <FaAngleLeft />
         <h1>Mailbox</h1>
-        <Button content={[<FaEnvelope />, 'New message']} />
+        <NewMsgButton />
         <div className={styles.sidebarMenu}>
           <NavLink to="./inbox" className={styles.menuItem}>
             <FaInbox />
@@ -48,9 +48,7 @@ export default function MailboxLayout() {
         </div>
       </div>
       <div className={styles.content}>
-        <div className={styles.toolbar}>
-          <input type="text" placeholder="Search" className={styles.searchInput} />
-        </div>
+       
         <Outlet />
         <div className={styles.messageList}>
         </div>

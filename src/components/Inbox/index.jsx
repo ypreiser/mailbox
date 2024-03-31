@@ -5,11 +5,14 @@ import MailItem from '../MailItem';
 export default function Inbox() {
     console.log({ data });
     return (
-        <div>
+        <div className={styles.inbox}>
+             <div className={styles.toolbar}>
+          <input type="text" placeholder="Search" className={styles.searchInput} />
+        </div>
             inbox
             {
                 data?.inbox?.map((v, i) => {
-                    return <MailItem key={i} info={v} />; // Added return statement
+                    return <MailItem key={i} info={v} />; 
                 })
             }
         </div>
